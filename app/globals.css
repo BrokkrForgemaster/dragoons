@@ -15,6 +15,25 @@
 }
 
 @layer utilities {
+  .buttonStyle {
+    @apply 
+        w-[250px] h-[50px] 
+        bg-gradient-to-r from-[#470000] to-[#ff4b2b] 
+        text-white font-bold 
+        shadow-lg 
+        border-none rounded-md 
+        p-[10px_20px] 
+        text-[20px] leading-none 
+        m-5 
+        cursor-pointer 
+        flex items-center justify-center 
+        transition-transform duration-200 ease-in-out; 
+}
+
+.buttonStyle:hover {
+    @apply scale-105; 
+}
+
   .heading {
     @apply px-6 py-3 text-[#e87d0e] font-work-sans font-extrabold text-shadow-md sm:text-[54px] sm:leading-[64px] text-[36px] leading-[46px] text-center my-5;
   }

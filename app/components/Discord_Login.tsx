@@ -8,9 +8,9 @@ export default function SignIn() {
         await signIn()
       }}
     >
-      <button type="submit">Signin with Google</button>
-      <button type="submit">Signin with Discord</button>
-      <button type="submit">Signin with Twitch</button>
+      <button
+        type="submit"
+        className="buttonStyle hover">Signin with Discord</button>
     </form>
   )
 } 
