@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { auth, signIn, signOut } from "@/auth";
-import Discord from "next-auth/providers/discord";
 
 const Navbar = async () => {
   const session = await auth();
@@ -15,7 +14,7 @@ const Navbar = async () => {
         <div className="flex items-center gap-5 text-white text-xl extra-bold shadow-orange">
           {session && session?.user ?(
             <>
-              <Link href="/dashboard/create">
+              <Link href="/dashboard/">
                 <span>Dashboard</span>
               </Link>
               
